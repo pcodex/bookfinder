@@ -1,0 +1,16 @@
+body{
+    background-color: powderblue;
+}
+
+h1{
+    color: white;
+}
+
+#paragraph{
+    color: goldenrod;
+}
+
+.para2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130px;
+}
