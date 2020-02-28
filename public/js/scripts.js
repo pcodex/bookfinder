@@ -29,7 +29,30 @@ function findbook(){
             var mediaheadingh5 = document.createElement('h5');
             mediaheadingh5.className = 'mt-0';
             mediaheadingh5.innerHTML = bkk.items[i].volumeInfo.title;
+            //create a h6 to display authors
+            var bkauthors = document.createElement('h6');
+            bkauthors.innerHTML = "AUTHORS : ";
+            try {
+                for(var z=0; z<bkk.items[i].volumeInfo.authors.length;z++)
+                {
+                    
+                        bkauthors.innerHTML += bkk.items[i].volumeInfo.authors[z] + "."; 
+                    
+                        
+                }   
+            } catch (error) {
+                console.log(error);
+            } 
+
+            //create a paragraph with the description
+            var bkdesc = document.createElement('p');
+            if(bkk.items[i].volumeInfo.description != null)
+                bkdesc.innerHTML = bkk.items[i].volumeInfo.description;
+
             mediabodydiv.appendChild(mediaheadingh5);
+            mediabodydiv.appendChild(bkauthors);
+            mediabodydiv.appendChild(bkdesc);
+
             
             //append the image and media body to the media div
             mediadiv.appendChild(mediaimage);

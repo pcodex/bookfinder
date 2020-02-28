@@ -1,9 +1,9 @@
 body{
-    background-color: powderblue;
+    background-color: white;
 }
 
 h1{
-    color: white;
+    color: black;
 }
 
 #paragraph{
@@ -13,4 +13,9 @@ h1{
 .para2{
     font-family: 'Times New Roman', Times, serif;
     font-size: 130px;
+}
+
+#main-body{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
